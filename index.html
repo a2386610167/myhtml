@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>河源三天两晚家庭旅游 | 温泉湖光，亲子度假</title>
+    <meta name="description" content="河源万绿湖渼居空中汤泉酒店和春沐源蓝葡萄酒店完美搭配，三天两晚家庭旅游完整攻略，温泉体验、湖光山色、亲子探索一站式度假。">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nature-green': '#22c55e',
+                        'lake-blue': '#0ea5e9',
+                        'warm-orange': '#f97316',
+                        'soft-pink': '#ec4899'
+                    },
+                    fontFamily: {
+                        'chinese': ['PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-chinese bg-gradient-to-br from-blue-50 to-green-50 min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-mountain-sun text-lake-blue text-2xl mr-3"></i>
+                    <span class="font-bold text-xl text-gray-800">河源家庭游</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#overview" class="text-gray-700 hover:text-lake-blue transition duration-300">概览</a>
+                    <a href="#hotels" class="text-gray-700 hover:text-lake-blue transition duration-300">酒店推荐</a>
+                    <a href="#itinerary" class="text-gray-700 hover:text-lake-blue transition duration-300">行程安排</a>
+                    <a href="#attractions" class="text-gray-700 hover:text-lake-blue transition duration-300">景点介绍</a>
+                    <a href="#tips" class="text-gray-700 hover:text-lake-blue transition duration-300">实用贴士</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-lake-blue focus:outline-none focus:text-lake-blue transition duration-300">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#overview" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">概览</a>
+                <a href="#hotels" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">酒店推荐</a>
+                <a href="#itinerary" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">行程安排</a>
+                <a href="#attractions" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">景点介绍</a>
+                <a href="#tips" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">实用贴士</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-lake-blue to-nature-green text-white pt-20 pb-16 overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                河源三天两晚家庭旅游
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                温泉体验 · 湖光山色 · 亲子探索 · 度假休闲
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-lg">
+                <div class="flex items-center">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    <span>2025年6月21-23日</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-users mr-2"></i>
+                    <span>4大1小家庭游</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-car mr-2"></i>
+                    <span>深圳自驾出发</span>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-16 fill-current text-blue-50">
+                <path d="M1200 120L0 120 0 0C400 60 800 30 1200 0Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">旅程概览</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    精心安排的三天两晚河源家庭游，体验两家各具特色的度假酒店，探索华南第一湖万绿湖，享受温泉度假的惬意时光。
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg">
+                    <div class="w-20 h-20 bg-lake-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hot-tub text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">空中温泉体验</h3>
+                    <p class="text-gray-600">万绿湖渼居独特的空中温泉和粉红沙滩，带来全新的放松体验</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg">
+                    <div class="w-20 h-20 bg-nature-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-water text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">华南第一湖</h3>
+                    <p class="text-gray-600">乘船游览万绿湖，探索湖中岛屿，感受大自然的壮丽风光</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl shadow-lg">
+                    <div class="w-20 h-20 bg-warm-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-home text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">一站式度假</h3>
+                    <p class="text-gray-600">春沐源蓝葡萄酒店提供别墅套房和丰富的娱乐设施</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotels Section -->
+    <section id="hotels" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">精选酒店</h2>
+                <p class="text-lg text-gray-600">两家风格迥异的度假酒店，为您的河源之旅提供完美住宿体验</p>
+            </div>
+            
+            <!-- Hotel Comparison Toggle -->
+            <div class="flex justify-center mb-8">
+                <div class="bg-white rounded-lg p-1 shadow-lg">
+                    <button id="hotel-view-cards" class="px-6 py-2 rounded-md bg-lake-blue text-white transition duration-300">
+                        <i class="fas fa-th-large mr-2"></i>卡片展示
+                    </button>
+                    <button id="hotel-view-compare" class="px-6 py-2 rounded-md text-gray-600 hover:bg-gray-100 transition duration-300">
+                        <i class="fas fa-balance-scale mr-2"></i>对比分析
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Hotels Cards View -->
+            <div id="hotels-cards" class="grid md:grid-cols-2 gap-8">
+                <!-- Loading placeholder - will be populated by JavaScript -->
+            </div>
+            
+            <!-- Hotels Comparison View -->
+            <div id="hotels-comparison" class="hidden">
+                <!-- Loading placeholder - will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section id="itinerary" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">详细行程</h2>
+                <p class="text-lg text-gray-600">三天两晚精心安排，每一刻都充满惊喜</p>
+            </div>
+            
+            <div id="itinerary-timeline" class="relative">
+                <!-- Loading placeholder - will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">精选景点</h2>
+                <p class="text-lg text-gray-600">河源最具代表性的旅游景点，适合全家游览</p>
+            </div>
+            
+            <div id="attractions-grid" class="grid md:grid-cols-3 gap-8">
+                <!-- Loading placeholder - will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Tips Section -->
+    <section id="tips" class="py-16 bg-gradient-to-r from-nature-green to-lake-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">实用贴士</h2>
+                <p class="text-lg opacity-90">让您的河源之旅更加顺利愉快</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-route text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold">自驾路线</h3>
+                    </div>
+                    <div class="space-y-2 text-sm opacity-90">
+                        <p><strong>距离:</strong> 约179公里</p>
+                        <p><strong>时间:</strong> 约2.5小时</p>
+                        <p><strong>路线:</strong> 长深高速(G25)为主</p>
+                        <p><strong>建议:</strong> 周五下午提前出发避开高峰</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-utensils text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold">美食推荐</h3>
+                    </div>
+                    <div class="space-y-2 text-sm opacity-90">
+                        <p>• 客家酿豆腐</p>
+                        <p>• 东江盐焗鸡</p>
+                        <p>• 客家酿三宝</p>
+                        <p>• 万绿湖河鲜（桂花鱼）</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold">注意事项</h3>
+                    </div>
+                    <div class="space-y-2 text-sm opacity-90">
+                        <p>• 做好防晒防蚊措施</p>
+                        <p>• 准备轻便透气衣物</p>
+                        <p>• 提前预订酒店和门票</p>
+                        <p>• 儿童安全需特别注意</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex justify-center items-center mb-4">
+                    <i class="fas fa-mountain-sun text-lake-blue text-3xl mr-3"></i>
+                    <span class="text-2xl font-bold">河源家庭游</span>
+                </div>
+                <p class="text-gray-300 mb-6">
+                    温泉度假 · 湖光山色 · 亲子时光 · 美好回忆
+                </p>
+                <div class="border-t border-gray-700 pt-6">
+                    <p class="text-gray-400 text-sm">
+                        © 2025 河源家庭旅游指南 | 制作者: MiniMax Agent
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-gradient-to-r from-lake-blue to-nature-green text-white p-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-300 opacity-0 invisible z-50">
+        <i class="fas fa-arrow-up text-lg"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+<style>
+#minimax-floating-ball {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 12px;
+  background: #222222;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  color: #F8F8F8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#minimax-floating-ball:hover {
+  transform: translateY(-2px);
+  background: #383838;
+}
+
+.minimax-ball-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.minimax-logo-wave {
+  width: 26px;
+  height: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'%3E%3Cg clip-path='url(%23clip0_3442_102412)'%3E%3Cpath d='M12.8405 14.6775C12.8405 14.9897 13.0932 15.2424 13.4055 15.2424C13.7178 15.2424 13.9705 14.9897 13.9705 14.6775V2.98254C13.9705 1.88957 13.0809 1 11.9879 1C10.895 1 10.0054 1.88957 10.0054 2.98254V11.566V17.1068C10.0054 17.5773 9.62327 17.9594 9.1528 17.9594C8.68233 17.9594 8.30021 17.5773 8.30021 17.1068V8.04469C8.30021 6.95172 7.41063 6.06215 6.31767 6.06215C5.22471 6.06215 4.33513 6.95172 4.33513 8.04469V11.8855C4.33513 12.3559 3.953 12.7381 3.48254 12.7381C3.01207 12.7381 2.62994 12.3559 2.62994 11.8855V10.4936C2.62994 10.1813 2.37725 9.92861 2.06497 9.92861C1.7527 9.92861 1.5 10.1813 1.5 10.4936V11.8855C1.5 12.9784 2.38957 13.868 3.48254 13.868C4.5755 13.868 5.46508 12.9784 5.46508 11.8855V8.04469C5.46508 7.57422 5.8472 7.19209 6.31767 7.19209C6.78814 7.19209 7.17026 7.57422 7.17026 8.04469V17.1068C7.17026 18.1998 8.05984 19.0894 9.1528 19.0894C10.2458 19.0894 11.1353 18.1998 11.1353 17.1068V2.98254C11.1353 2.51207 11.5175 2.12994 11.9879 2.12994C12.4584 2.12994 12.8405 2.51207 12.8405 2.98254V14.6775Z' fill='%23F8F8F8'/%3E%3Cpath d='M23.3278 6.06215C22.2348 6.06215 21.3452 6.95172 21.3452 8.04469V15.6143C21.3452 16.0847 20.9631 16.4669 20.4926 16.4669C20.0222 16.4669 19.6401 16.0847 19.6401 15.6143V2.98254C19.6401 1.88957 18.7505 1 17.6575 1C16.5645 1 15.675 1.88957 15.675 2.98254V19.0175C15.675 19.4879 15.2928 19.8701 14.8224 19.8701C14.3519 19.8701 13.9698 19.4879 13.9698 19.0175V17.0329C13.9698 16.7206 13.7171 16.4679 13.4048 16.4679C13.0925 16.4679 12.8398 16.7206 12.8398 17.0329V19.0175C12.8398 20.1104 13.7294 21 14.8224 21C15.9153 21 16.8049 20.1104 16.8049 19.0175V2.98254C16.8049 2.51207 17.187 2.12994 17.6575 2.12994C18.128 2.12994 18.5101 2.51207 18.5101 2.98254V15.6143C18.5101 16.7072 19.3997 17.5968 20.4926 17.5968C21.5856 17.5968 22.4752 16.7072 22.4752 15.6143V8.04469C22.4752 7.57422 22.8573 7.19209 23.3278 7.19209C23.7982 7.19209 24.1804 7.57422 24.1804 8.04469V14.6775C24.1804 14.9897 24.4331 15.2424 24.7453 15.2424C25.0576 15.2424 25.3103 14.9897 25.3103 14.6775V8.04469C25.3103 6.95172 24.4207 6.06215 23.3278 6.06215Z' fill='%23F8F8F8'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3442_102412'%3E%3Crect width='25' height='22' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.minimax-ball-text {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.minimax-close-icon {
+  margin-left: 8px;
+  font-size: 16px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.minimax-close-icon:hover {
+  opacity: 1;
+}
+</style>
+<div id="minimax-floating-ball">
+  <div class="minimax-ball-content">
+    <div class="minimax-logo-wave"></div>
+    <span class="minimax-ball-text">Created by MiniMax Agent</span>
+  </div>
+  <div class="minimax-close-icon">×</div>
+</div>
+<script>
+// Initialize floating ball functionality
+function initFloatingBall() {
+  const ball = document.getElementById('minimax-floating-ball');
+  if (!ball) return;
+
+  // Initial animation
+  ball.style.opacity = '0';
+  ball.style.transform = 'translateY(20px)';
+
+  setTimeout(() => {
+    ball.style.opacity = '1';
+    ball.style.transform = 'translateY(0)';
+  }, 500);
+
+  // Handle logo click
+  const ballContent = ball.querySelector('.minimax-ball-content');
+  ballContent.addEventListener('click', function (e) {
+    e.stopPropagation();
+    window.open('https://agent.minimax.io/agent', '_blank');
+    ball.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+      ball.style.transform = 'scale(1)';
+    }, 100);
+  });
+
+  // Handle close button click
+  const closeIcon = ball.querySelector('.minimax-close-icon');
+  closeIcon.addEventListener('click', function (e) {
+    e.stopPropagation();
+    ball.style.opacity = '0';
+    ball.style.transform = 'translateY(20px)';
+
+    setTimeout(() => {
+      ball.style.display = 'none';
+    }, 300);
+  });
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initFloatingBall); 
+</script>
+
+</body>
+</html>
